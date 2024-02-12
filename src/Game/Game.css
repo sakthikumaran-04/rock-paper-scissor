@@ -1,0 +1,142 @@
+.game{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header i{
+    font-size: 45px;
+    color:rgb(213, 205, 205);
+}
+header h2{
+    color:rgb(213, 205, 205);
+}
+header button{
+    width: auto;
+    background-color: rgb(213, 205, 205);
+    box-shadow: 0px 6px 0px rgb(87, 146, 255);
+}
+.player1,.player2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.player1_choice,.player2_choice{
+    width:78px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    object-fit: contain;
+    align-self: center;
+    /* padding: 20px; */
+}
+.player1 img{
+    transform: rotateX(180deg);
+}
+/* .circle1,.circle2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height:170px;
+    padding:0px;
+    border-radius: 50%;
+    border: 8px solid beige;
+    background-color: rgb(64, 5, 203);;
+}
+.circle2{
+    background-color: rgba(140, 210, 0, 0.853);
+} */
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+.options img{
+    width:30px;
+}
+.options button{
+    width:auto;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 122, 122);
+}
+.scores{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.player1_score,.ties,.player2_score{
+    background-color: rgb(213, 205, 205);
+    width:90px;
+    border-radius: 7px;
+}
+.player2_score{
+    background-color: rgb(158, 222, 31);
+}
+.circle1,.circle2{
+    width:auto;
+}
+.board h3{
+    text-align: center;
+    color:rgb(213, 205, 205);
+    padding: 20px;
+}
+.container{
+    height:120px;
+    width: fit-content;
+}
+
+@media only screen and (max-width:560px){
+    .game{
+        width:100%;
+    }
+    header{
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    header i{
+        font-size: 35px;
+    }
+    header button{
+        padding:6px 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgb(213, 205, 205);
+        box-shadow: 0px 6px 0px rgb(87, 146, 255);
+    }
+    header button img{
+        width:18px;
+    }
+    .options img{
+        width:27px;
+    }
+    .player1_choice,.player2_choice{
+        width:60px;
+    }
+    .scores{
+        gap:10px;
+        padding-bottom: 15px;
+    }
+    .scores h4{
+        font-size: 14px;
+    }
+    .container{
+        height:90px;
+    }
+}

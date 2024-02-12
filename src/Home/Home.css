@@ -1,0 +1,49 @@
+.logo{
+    width:250px;
+}
+img,button{
+    -webkit-tap-highlight-color: transparent;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    color:rgb(213, 205, 205);
+    gap:18px;
+    padding: 10px;
+}
+button{
+    padding:12px 15px;
+    width:90%;
+    font-weight: 700;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+button:active{
+    box-shadow: none;
+    transform: translateY(6px);
+}
+.vs_cpu{
+    background-color: rgb(158, 222, 31);
+    box-shadow: 0px 6px 0px rgb(111, 148, 38);
+}
+.vs_player{
+    background-color:rgb(144, 183, 255);
+    box-shadow: 0px 6px 0px rgb(87, 146, 255);
+}
+@media only screen and (max-width:560px){
+    .home h1{
+        font-size: 24px;
+    }
+    .home p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+}
