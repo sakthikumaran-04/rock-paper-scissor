@@ -61,7 +61,7 @@ function Game(props) {
         <main className='game'>
             <header>
                 <i className="fa-solid fa-gamepad" onClick={()=>props.setPage("home")}></i>
-                <h2>P1 vs P2</h2>
+                <h2>CPU VS P1</h2>
                 <button onClick={reset}><img src={restart} alt="" /></button>
             </header>
             <section className='board'>
