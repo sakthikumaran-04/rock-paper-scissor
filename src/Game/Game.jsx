@@ -68,13 +68,13 @@ function Game(props) {
                 <section className='player1'>
                     {props.gameType=="human" && <Options setP1Choice={setP1Choice} p1Choice={p1Choice}  start={startGameCpu}/>}
                     <div className="container">
-                   <img className='player1_choice' src={p1Choice =="rock"? rock:p1Choice=="paper"?paper:scissor} alt="" />
+                   <img className='player1_choice' src={p1Choice =="rock"? rock:p1Choice=="paper"?paper:scissor} alt={`CPU choice ${p1Choice}`} />
                     </div>
                 </section>
                 <h3>{result}</h3>
                 <section className='player2'>
                     <div className="container">
-                    <img className='player2_choice' src={p2Choice =="rock"? rock:p2Choice=="paper"?paper:scissor} alt="" />
+                    <img className='player2_choice' src={p2Choice =="rock"? rock:p2Choice=="paper"?paper:scissor} alt={`Player choice ${p2Choice}`} />
                     </div>
                     <Options setP2Choice={setP2Choice} p2Choice={p2Choice} start={startGameCpu} />
                 </section>

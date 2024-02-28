@@ -24,7 +24,7 @@ function Options(props) {
                 console.log(props.p2Choice)
             }
             props.start(rockRef.current.value);
-        }}><img src={rock} alt="" /></button>
+        }}><img src={rock} alt="Rock choice" /></button>
         <button ref={paperRef} value="paper" onClick={()=>{
             if(props.setP1Choice){
                 props.setP1Choice(prev => paperRef.current.value)
@@ -34,7 +34,7 @@ function Options(props) {
                 console.log(props.p2Choice)
             }
             props.start(paperRef.current.value);
-        }}><img src={paper} alt="" /></button>
+        }}><img src={paper} alt="paper choice" /></button>
         <button ref={scissorRef} value="scissor" onClick={()=>{
             if(props.setP1Choice){
                 props.setP1Choice(prev => scissorRef.current.value)
@@ -44,7 +44,7 @@ function Options(props) {
                 console.log(props.p2Choice)
             }
             props.start(scissorRef.current.value);
-        }}><img src={scissor} alt="" /></button>
+        }}><img src={scissor} alt="scissor choice" /></button>
     </div>
   )
 }
