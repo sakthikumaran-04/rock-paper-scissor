@@ -14,4 +14,4 @@ To run the project locally, follow these steps:
 To run the project online, this app is deployed on netlify.
 the live link is given below
 
-link:`sakthi-rps.netlify.app`
+link:http://sakthi-rps.netlify.app
